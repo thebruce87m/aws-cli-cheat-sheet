@@ -7,6 +7,12 @@ aws configure --profile your-name
 ```
 
 
+# SSO Login
+
+```bash
+aws sso login --profile profile-name
+```
+
 # Verify Install
 
 Find version:
