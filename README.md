@@ -6,13 +6,6 @@
 aws configure --profile your-name
 ```
 
-
-# SSO Login
-
-```bash
-aws sso login --profile profile-name
-```
-
 # Verify Install
 
 Find version:
@@ -68,4 +61,24 @@ or sync:
 
 ```bash
 aws s3 sync SOURCE_DIR s3://DEST_BUCKET/
+```
+
+
+# SSO
+
+## SSO Login
+
+```bash
+aws sso login --profile profile-name
+```
+
+`~/.aws/config`
+
+```
+[profile profile-name]
+sso_session = session-name
+sso_account_id = sso-account-id
+sso_role_name = role-name
+region = eu-west-1
+output = json
 ```
